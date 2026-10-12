@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary: #f85f11;
+    --secondary: #04a53f;
+    --text: #363636;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
