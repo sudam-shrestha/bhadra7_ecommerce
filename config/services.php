@@ -41,4 +41,9 @@ return [
         'redirect' => env("GOOGLE_REDIRECT"),
     ],
 
+    'khalti' => [
+        'base_url' => env('KHALTI_BASEURL'),
+        'secret'   => env('KHALTI_SECRET'),
+    ],
+
 ];

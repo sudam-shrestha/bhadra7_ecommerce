@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\OrderReceiptController;
 use App\Http\Controllers\Frontend\AuthController;
 use App\Http\Controllers\Frontend\CartController;
 use App\Http\Controllers\Frontend\OrderController;
@@ -38,4 +39,10 @@ Route::middleware('auth')->group(function () {
     // Orders
     Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
     Route::get('/orders/{order}', [OrderController::class, 'show'])->name('orders.show');
+
+    Route::post('/orders/{order}/pay', [OrderController::class, 'pay'])->name('orders.pay');
 });
+
+Route::get('/khalti/callback', [OrderController::class, 'khalti_callback'])->name('khalti_callback');
+
+Route::get('/receipt/orders/{order}', OrderReceiptController::class)->name('admin.orders.receipt');

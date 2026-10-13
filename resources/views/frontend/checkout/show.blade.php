@@ -71,17 +71,12 @@
                             </div>
                             <i class="fa-solid fa-money-bill-wave text-2xl text-(--secondary)"></i>
                         </label>
-
-                        {{-- Khalti (disabled for now) --}}
                         <label
-                            class="flex cursor-not-allowed items-start gap-4 rounded-2xl border border-gray-200 bg-gray-50 p-4 opacity-60">
-                            <input type="radio" name="payment_method" value="khalti" disabled class="mt-1 h-4 w-4">
+                            class="flex cursor-pointer items-start gap-4 rounded-2xl border border-gray-300 p-4 transition has-checked:border-(--primary) has-checked:bg-(--primary)/5 has-checked:ring-2 has-checked:ring-(--primary)/20">
+                            <input type="radio" name="payment_method" value="khalti" class="mt-1 h-4 w-4 accent-(--primary)">
                             <div class="flex-1">
                                 <p class="font-semibold">
                                     Pay with Khalti
-                                    <span
-                                        class="ml-2 rounded-full bg-gray-200 px-2.5 py-0.5 text-xs font-medium text-gray-600">Coming
-                                        soon</span>
                                 </p>
                                 <p class="text-sm text-gray-500">Fast and secure online payment.</p>
                             </div>

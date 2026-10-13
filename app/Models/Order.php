@@ -12,6 +12,8 @@ class Order extends Model
         'status',
         'payment_status',
         'payment_method',
+        'khalti_pidx',
+        'khalti_transaction_id',
         'total_amount',
         'contact_no',
         'address',
